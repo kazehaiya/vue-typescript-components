@@ -84,55 +84,26 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        oneOf: [
+        use: [
           {
-            resourceQuery: /\?vue/,
-            use: [
-              {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
-              },
-              {
-                loader: 'css-loader',
-                options: {
-                  sourceMap: false,
-                  importLoaders: 2
-                }
-              },
-              {
-                loader: 'postcss-loader',
-                options: {
-                  sourceMap: false
-                }
-              }
-            ]
+            loader: 'vue-style-loader',
+            options: {
+              sourceMap: false,
+              shadowMode: false
+            }
           },
           {
-            use: [
-              {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
-              },
-              {
-                loader: 'css-loader',
-                options: {
-                  sourceMap: false,
-                  importLoaders: 2
-                }
-              },
-              {
-                loader: 'postcss-loader',
-                options: {
-                  sourceMap: false
-                }
-              }
-            ]
+            loader: 'css-loader',
+            options: {
+              sourceMap: false,
+              importLoaders: 2
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: false
+            }
           }
         ],
         include: [
@@ -141,67 +112,32 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        oneOf: [
+        use: [
           {
-            resourceQuery: /\?vue/,
-            use: [
-              {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
-              },
-              {
-                loader: 'css-loader',
-                options: {
-                  sourceMap: false,
-                  importLoaders: 2
-                }
-              },
-              {
-                loader: 'postcss-loader',
-                options: {
-                  sourceMap: false
-                }
-              },
-              {
-                loader: 'less-loader',
-                options: {
-                  sourceMap: false
-                }
-              }
-            ]
+            loader: 'vue-style-loader',
+            options: {
+              sourceMap: false,
+              shadowMode: false
+            }
           },
           {
-            use: [
-              {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
-              },
-              {
-                loader: 'css-loader',
-                options: {
-                  sourceMap: false,
-                  importLoaders: 2
-                }
-              },
-              {
-                loader: 'postcss-loader',
-                options: {
-                  sourceMap: false
-                }
-              },
-              {
-                loader: 'less-loader',
-                options: {
-                  sourceMap: false
-                }
-              }
-            ]
+            loader: 'css-loader',
+            options: {
+              sourceMap: false,
+              importLoaders: 2
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: false
+            }
+          },
+          {
+            loader: 'less-loader',
+            options: {
+              sourceMap: false
+            }
           }
         ]
       },

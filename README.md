@@ -47,4 +47,23 @@ module.exports = {
 }
 ```
 
-#### 单文件配置引入的 css 报错
+#### 单文件构建引入的 css 报错
+单文件构建时，如果引入了 node_modules 内 css 文件，在编译时会报错，这是因为配置 `loader` 时，其默认是忽略 node_modules 的，因此编译时会提示找不到对应的 css 文件，应该如此配置：
+
+``` js
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        // ...
+        include: [
+          resolve('node_modules/element-ui/lib/theme-chalk')
+        ]
+      }
+    ]
+  }
+};
+```
+
+将对应的文件加入 include 文件列表内即可
