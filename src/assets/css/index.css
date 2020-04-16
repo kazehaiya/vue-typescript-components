@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+/* ==|== CSS RESET======================= */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var,
+i {
+  font-style: normal;
+  font-weight: 500;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+ol,
+ul { list-style: none; }
+fieldset,
+img { border: 0; }
+del,
+ins { text-decoration: none; }
+caption,
+th { text-align: left; }
+html {
+  text-size-adjust: 100%;
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section { display: block; }
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea { font-size: 100%; }
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  appearance: button;
+}
+button[disabled],
+html input[disabled] { cursor: default; }
+li,
+input {
+  outline: none;
+  box-shadow: none;
+}
+textarea { overflow: auto; }
+q::before,
+q::after { content: ""; }
+del { text-decoration: line-through; }
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup { top: -.5em; }
+sub { bottom: -.25em; }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th { text-align: inherit; }
+iframe { display: block; }
+pre {
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+* {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
