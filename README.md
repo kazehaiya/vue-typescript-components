@@ -27,7 +27,7 @@ module.exports = {
 
 > 原因：vue 默认用 terser 压缩代码，没有配置 class 名压缩问题。
 
-#### 本地环境引入编译的代码报错
+#### 引入编译后的代码报错
 配置 `vue.config.js` 文件，更新 js 配置的 `exclude` 内容。
 
 ``` js
