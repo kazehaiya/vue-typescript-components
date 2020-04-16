@@ -136,7 +136,7 @@ module.exports = {
           }
         ],
         include: [
-          resolve('element-ui/lib/theme-chalk')
+          resolve('node_modules/element-ui/lib/theme-chalk')
         ]
       },
       {
