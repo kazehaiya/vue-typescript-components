@@ -44,6 +44,6 @@
     "webpack-cli": "^3.3.11"
   },
   "peerDependencies": {
-    "element-ui": "^2.13.1"
+    "element-ui": "^2.13.2"
   }
 }
